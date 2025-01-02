@@ -1,0 +1,9 @@
+[build]
+  base = "contact-keeper"
+  command = "npm install && cd client && npm install && npm run build"
+  publish = "client/build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

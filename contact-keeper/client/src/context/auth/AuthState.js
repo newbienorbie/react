@@ -14,10 +14,10 @@ import {
   CLEAR_ERRORS,
 } from "../types";
 
-axios.defaults.baseURL =
-  process.env.REACT_APP_API_URL || "http://localhost:5000";
-
 const AuthState = (props) => {
+  useEffect(() => {
+    axios.defaults.baseURL = "http://localhost:5000";
+  }, []);
   const initialState = {
     token: localStorage.getItem("token"),
     isAuthenticated: null,

@@ -1,3 +1,4 @@
+require("dotenv").config();
 const express = require("express");
 const cors = require("cors");
 const connectDB = require("./config/db");
@@ -7,10 +8,10 @@ const app = express();
 
 app.use(
   cors({
-    origin:
-      process.env.NODE_ENV === "production"
-        ? "your-frontend-vercel-url"
-        : "http://localhost:3000",
+    origin: "http://localhost:3000",
+    credentials: true,
+    methods: ["GET", "POST", "PUT", "DELETE", "OPTIONS"],
+    allowedHeaders: ["Content-Type", "x-auth-token", "Authorization"],
   })
 );
 
@@ -23,6 +24,7 @@ app.use(express.json({ extended: false }));
 // define routes
 app.use("/api/users", require("./routes/users"));
 app.use("/api/auth", require("./routes/auth"));
+``;
 app.use("/api/contacts", require("./routes/contacts"));
 
 // serve static assets in production

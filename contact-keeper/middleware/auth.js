@@ -2,6 +2,7 @@
 
 const jwt = require("jsonwebtoken");
 const config = require("config");
+require("dotenv").config();
 
 module.exports = function (req, res, next) {
   // get token from header
@@ -14,7 +15,7 @@ module.exports = function (req, res, next) {
 
   try {
     // verify the token
-    const decoded = jwt.verify(token, config.get("jwtSecret"));
+    const decoded = jwt.verify(token, process.env.JWT_SECRET);
 
     // set user in that's in payload to request a user so we'll have access to this inside the route
     req.user = decoded.user;
