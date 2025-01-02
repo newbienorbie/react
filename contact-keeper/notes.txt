@@ -1,0 +1,5 @@
+dependencies backend: npm i express bcryptjs jsonwebtoken config express-validator mongoose
+
+dev-dependencies:npm i -D nodemon concurrently
+
+dependencies frontend: npm i axios react-router-dom uuid react-transition-group
