@@ -1,0 +1,7 @@
+devDependencies: npm i -D json-server concurrently
+redux: npm i redux react-redux redux-thunk redux-devtools-extension
+
+how to add functionality:
+1. start with action (like add log, edit log)
+2. dispatch to reducer which will control the state
+3. connect to components

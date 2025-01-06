@@ -1,0 +1,57 @@
+{
+  "logs": [
+    {
+      "id": "c84f",
+      "message": "Changed network card on server 007",
+      "attention": false,
+      "tech": "Sam Smith",
+      "date": "2025-01-04T08:37:14.969Z"
+    },
+    {
+      "id": "255e",
+      "message": "Fixed hard drive on workstation 2",
+      "attention": false,
+      "tech": "John Doe",
+      "date": "2025-01-04T09:07:46.973Z"
+    },
+    {
+      "id": "7632",
+      "message": "1122 wireless down",
+      "attention": true,
+      "tech": "Sam Smith",
+      "date": "2025-01-04T08:38:01.609Z"
+    }
+  ],
+  "techs": [
+    {
+      "id": "1",
+      "firstName": "John",
+      "lastName": "Doe"
+    },
+    {
+      "id": "2",
+      "firstName": "Sam",
+      "lastName": "Smith"
+    },
+    {
+      "id": "3",
+      "firstName": "Sara",
+      "lastName": "Wilson"
+    },
+    {
+      "id": "afb0",
+      "firstName": "Jen",
+      "lastName": "Williams"
+    },
+    {
+      "id": "a48e",
+      "firstName": "Greg",
+      "lastName": "Harris"
+    },
+    {
+      "id": "42e3",
+      "firstName": "Snoopy",
+      "lastName": "Lam"
+    }
+  ]
+}
